@@ -1,5 +1,5 @@
-FROM jenkins/inbound-agent:alpine3.22-jdk17
-
+FROM jenkins/inbound-agent:latest-alpine-jdk21
+ARG AGENT_WORKDIR=/j
 USER root
 RUN apk add --no-cache --upgrade \
       openjdk8 \
