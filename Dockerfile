@@ -10,4 +10,4 @@ RUN apk add --no-cache --upgrade \
       make
 
 # switch back to the Jenkins user that the agent image expects
-USER jswarm
+USER jenkins
