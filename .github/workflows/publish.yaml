@@ -24,6 +24,3 @@ jobs:
           platforms: linux/amd64,linux/arm64
           github_token: ${{ secrets.GITHUB_TOKEN }}
           push: true
-          tag: |
-            latest
-            ${{ github.sha }}
