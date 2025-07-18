@@ -1,6 +1,6 @@
 name: Build & Publish JNLP Agent
 
-# trigger on pushes to main (adjust as you like)
+# trigger on pushes to main
 on:
   push:
     branches:
@@ -24,3 +24,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           github_token: ${{ secrets.GITHUB_TOKEN }}
           push: true
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/jenkins-jnlp-client:latest
+            ghcr.io/${{ github.repository_owner }}/jenkins-jnlp-client:${{ github.sha }}
