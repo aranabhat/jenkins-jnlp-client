@@ -25,5 +25,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           push: true
           tag: |
-            ghcr.io/${{ github.repository_owner }}/jenkins-jnlp-client:latest
-            ghcr.io/${{ github.repository_owner }}/jenkins-jnlp-client:${{ github.sha }}
+            latest
+            ${{ github.sha }}
